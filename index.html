@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            display: flex;
+            flex-direction: row;
+        }
+        main{
+            width: 100vh;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding-left: 5%;
+            justify-content: space-evenly;
+            align-content: center;    
+        }
+        main h1{
+            font-size: xx-large;
+            color: blue;
+
+        }
+        .bg{
+            background-color: blue;
+            color: beige;
+        }
+         main h2{ 
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 3em;
+            flex-wrap: wrap;
+            color: rgb(87, 42, 56);
+        }
+    
+        main div input{
+            width: 400px;
+            height: 50px;
+            border-bottom: 2px solid blueviolet;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column; 
+            margin-top: 5px;
+            margin-bottom: 20px;
+            padding-left: 10px;
+       } 
+        main div label{
+            text-transform: capitalize;
+            margin-bottom: 50px;
+       }
+        div button{
+            width: 400px;
+            height: 50px;
+            border-radius: 30px;
+            font-size: 1em;
+            text-transform: capitalize;
+            background-color: rgb(66, 78, 236);
+            color: beige;
+        }
+       .button{
+        
+            width: 400px;
+            height: 50px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size:1em;
+       }
+       main div input:hover{
+            box-shadow: 0px 0px 5px;
+            
+        }
+       .size{
+            height: 40px;
+            width: 30px;
+            margin-left: 3px;
+       }
+         .span{
+            display: flex;
+            flex-direction: column;
+       } 
+       span a{
+            font-size: 1em;
+            text-decoration: none;
+            padding-top: 2px;
+       }
+      section div{
+        display: flex;
+        flex-direction: row;
+       
+      }
+      section div a{
+           padding-left: 2em;
+       } 
+        
+       section div button{
+            width: 80px;
+            height: 40px;
+            word-wrap: break-word;
+       
+       }
+       .join{
+        background-color: beige;
+        color: black;
+        border: none;
+        text-decoration: none;
+        margin-top: 15px;
+        margin-right: 15px;
+       }
+       .log{
+        background-color: beige;
+        color: rgb(59, 98, 206);
+        border: 0.5px solid rgb(59, 98, 206);
+        text-decoration: none;
+        margin-top: 15px;
+       }
+       #a{
+        margin-top: 15px;
+       }
+       
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Linked<b class="bg">in</b></h1>
+        <h2>
+            Welcome to your professional community
+        </h2>
+        <div>
+            <label for="">email</label> 
+            <input type="email" placeholder="Enter your email id">
+            <label for="">password</label>
+            <input type="password" placeholder="Enter your password">
+            <span class="span">
+            <a style="margin-bottom: 20px;" href="">forgot password?</a>
+            </span> 
+            <button>sign in</button>
+        </div>
+        
+        <a style="padding-left: 200px;" href="">or</a>
+        <button class="button">    
+        <span>
+            <!-- <img class="size" src="images/icong.png" alt=""> -->
+           <a href="">sign in with google</a>  
+        </span>
+        </button>
+       
+
+    </main>
+    <section>
+        <div >
+            <a href="">
+            <img style="display: block;" src="images/trending.png" height="40px" width="30px" alt="">trending 
+            </a>
+            <a href="">
+                <img style="display: block;" src="images/article.png" height="40px" width="30px" alt="">article
+            </a>
+            <a href="">
+                <img  style="display: block;" src="images/people.png" height="40px" width="30px" alt="">people
+            </a>
+            <a href="">
+                <img style="display: block;" src="images/learning.png" height="40px" width="30px" alt="">learning
+            </a>
+            <a href="">
+                <img  style="display: block;" src="images/job.jpg" height="40px" width="30px" alt="">job
+            </a>
+             <a style="display: inline-flex" href="">
+                <button class="join" >join now</button>
+                <button class="log">sign in</button>
+            </a>
+        </div> 
+        <img src="images/linkedin_bg.png" alt="">
+    </section>
+</body>
+</html>
